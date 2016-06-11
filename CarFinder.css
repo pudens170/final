@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#map-canvas {
+    height: 70%;
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#display_information_message {
+    margin: 0 auto;
+    color: black;
+    width: 30%;
+    padding: 5px;
+}
+
+#map-canvas {
+    border-top: 2px solid blueviolet;
+    border-bottom: 2px solid blueviolet;
+}
+
+#main {
+    display: block;
+    margin-left: 350px;
+
+}
+
+#option {
+    height: 70%;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid cornflowerblue;
+    background-color: #0091ea;
+    opacity: 87;
+}
+
+#addNotes {
+    width:30%;
+    margin: 0 auto;
+   // border: 1px solid cornflowerblue;
+    padding: 10px;
+
+}
+
+.mapOption {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: small;
+
+}
+
+.settings_heading { /*responsible for settings heading display*/
+    color: white;
+    font-family: Calibri;
+    padding: 9px;
+}
+
+.settings_heading_arrow, .settings_arrow { /*responsible for settings heading arrow display*/
+    color: white;
+    font-family: Calibri;
+    padding: 9px;
+    cursor: pointer;
+}
+
+#settings_body { /*responsible for settings body display*/
+    background-color: white;
+    padding-top: 8px;
+}
+
+#advanced_option { /*div that house the map selection type*/
+    height: 70%;
+    width: 50%;
+    opacity: 87;
+    margin: 0 auto;
+    border: 1px solid cornflowerblue;
+    /*background-color:#0091ea;*/
+    background-color: white;
+}
+
+#settings_heading {
+    background-color: #0091ea;
+    width: 99%;
+    color: white;
+    padding: 3px;
+}
+
+#s {
+    height: 60%;
+    background-color: white;
+}
+
+#map_type_button_div { /*div that house the map_type button*/
+    background-color: white;
+    opacity: 54;
+}
+
+#camera {
+    background-image: url("image/camera.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 44px;
+    height: 30px;
+    font-size: smaller;
+
+}
+
+h5 { /**This informs the user what to do e.g Please select yor map*/
+    text-align: center;
+    color: white;
+    font-family: "Arial Nova Cond Light";
+    font-size: medium;
+}
+
+.radio_position { /*this is use to float the position of the map type radio button to the right*/
+    float: right;
+
+}
+
+#terrain, #satellite { /*span button that is used to display map type label*/
+    padding: 8px;
+}
+
+#map_type_radio_button_div { /*di that house the radio button for map type */
+    background-color: white;
+    border: 1px solid cornflowerblue;
+    padding-top: 10px;
+}
+
+#map_type-selection_button { /*button that the user clicks when finish selecting map type*/
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+
+#display_information_message { /*use to display information to the user immediately car gets parked*/
+    background-color: black;
+    color: white;
+    text-align: center;
+}

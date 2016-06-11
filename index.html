@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <title>Car Finder</title>
+    <link rel='stylesheet' href='CarFinder.css'/>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbO__9RjGyz4489z_KxcjnfjCfAaf1t-w& sensor=false">
+    </script>
+    <script type="text/javascript" src="MapDisplay.js"></script>
+    <script type="text/javascript" src="CarFinder.js"></script>
+    <script type="text/javascript" src="ChangeMap.js"></script>
+</head>
+<body>
+<div id="display_information_message">Car parked successfully</div>
+<br/>
+
+<form >
+<div id="addNotes">
+    <div id="note_save_message">Note added successfully</div>
+   <textarea id="description" placeholder="enter parking description here"></textarea><br/>
+    <input  type="submit" value="Save"id="addNotes_button" onclick="show()">
+</div>
+</form>
+
+<div id="map-canvas">
+</div>
+<br>
+
+
+<div id="main">
+    <input type="button" id="park" onclick="getParkingLocation();" value="park"/>
+    <input id="findCar" value="find Car" type="button"/>
+    <input value="More" id="more" type="button"/><br><br>
+</div>
+
+<div id="option">
+    <span class="settings_heading"><span class="settings_heading_arrow"><<<</span>Settings</span><br/>
+    <div id="settings_body">
+        <span class="mapOption">Map type</span><br/>
+        <hr/>
+        <span class="mapOption">About</span><br/>
+        <hr/>
+        <!--<span class="mapOtion"></span><br/>-->
+    </div>
+
+    <!--//<input type="button" id="mapOption" value="select map type"><br/>-->
+    <!--<p><input type="button" id="camera"> Take Picture</p>-->
+</div>
+<br/><br/>
+<div id="advanced_option">
+    <div id="settings_heading"><span class="settings_arrow"><<<</span>Select Map Type</div>
+    <div id="map_type_radio_button_div">
+        <span id="terrain"> Terrain</span><input class="radio_position" value="Terrain" name="mapType" type="radio"
+                                                 onclick="displayTerrainMap();">
+        <hr>
+        <span id="satellite">Satellite</span><input class="radio_position" value="Satellite" name="mapType" type="radio"
+                                                    onclick="displaySatelliteMap();">
+
+    </div>
+    <!--<div id="map_type_button_div">-->
+    <!--<button id="map_type-selection_button">Ok</button></div>-->
+    <!--</div><br/><br/>-->
+</div>
+</body>
+</html>
